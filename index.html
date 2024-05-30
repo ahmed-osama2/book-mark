@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Mark</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ <!-- favicon -->
+ <link  rel="shortcut icon" href="./imge/book-bookmark-icon-png.png" type="image/x-icon">
+
+
+  <!--bootstrab  -->
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- fontawesome -->
+
+  <link rel="stylesheet" href="./css/all.min.css">
+
+  <!-- my style -->
+
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class=" bg-danger-subtle ">
+
+
+  <div class="container">
+    <div class="d-flex justify-content-center py-5 my-test">
+      
+      <h1 >Bookmarker </h1>
+    </div>
+
+
+    <div class="my-vip ">
+
+      <div class="my-linear d-flex justify-content-center">
+
+        <h3 class="m-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+            class="fa-solid fa-bookmark"></i></h3>
+
+      </div>
+
+      <!-- sit name book -->
+      <div class="mb-3">
+        <label for="siteNameBook" class="form-label">
+          <h5> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</h5>
+        </label>
+
+        <input type="text" class="form-control" id="siteNameBook" placeholder="Site Name">
+
+      </div>
+       <!--  set url -->
+      <div class="mb-3">
+        <label for="siteNameUrl" class="form-label">
+          <h5> <i class="fa-solid fa-link pe-2"></i> Site URL</h5>
+        </label>
+
+        <input type="text" class="form-control" id="siteNameUrl" placeholder="Site URL">
+
+      </div>
+
+
+      <!-- submit -->
+
+      <div id="Edit" class="text-center pb-4">
+
+        <button onclick="addSite()" type="submit" class="btn btn-danger px-5">Submit</button>
+
+      </div>
+
+
+
+
+    </div>
+
+    <!-- get search -->
+
+    <div class="my-3">
+      <label for="searchName" class="form-label">
+        <h5> <i class="fa-solid fa-book-bookmark pe-2"></i> Search Name Book</h5>
+      </label>
+
+      <input onkeyup="searchSites()" type="text" class="form-control" id="searchName" placeholder="Search Name Book">
+
+    </div>
+
+
+
+    <div class="d-flex justify-content-around bg-white align-items-center pt-1 border-bottom ">
+      <h4 class="my-table">Index</h4>
+      <h4>Website Name </h4>
+      <h4>Visit</h4>
+      <h4>Delete</h4>
+      <h4>Ubdate</h4>
+    </div>
+
+
+
+
+
+
+    <div id="vipStyle">
+      
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- **********js******** -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/test.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,57 @@
+.my-vip {
+
+    border-bottom: 2px dashed;
+    border-top: 2px dashed;
+
+
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Pacifico", cursive;
+    position: relative;
+   
+}
+
+h1::after{
+    content: '';
+    width: 100%;
+    
+    position: absolute;
+    background-color: rgb(254, 194, 96);
+    left: 0%;
+    bottom: 0% ;
+    top: 70%;
+    z-index: -999999999999999999;
+    transition: all .5s;
+}
+
+.my-test:hover h1::after{
+    top: 30%;
+
+    
+}
+
+
+h4 {
+    width: 21%;
+    text-align: center;
+
+}
+
+h4.my-table {
+    width: 16%;
+    text-align: center;
+
+}
+
+.my-linear h3 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 25px;
+}
+
